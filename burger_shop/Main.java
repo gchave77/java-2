@@ -35,22 +35,22 @@ public class Main {
         // For the two additional classes this may require you to be looking at the base class for pricing and then
         // adding totals to final price.
 
-        burger_shop.Hamburger hamburger = new burger_shop.Hamburger("Basic", "Sausage", 3.56, "White");
+        burger_shop.Hamburger hamburger = new burger_shop.Hamburger("Basic", "Sausage", 3.56, "White bread");
         double price = hamburger.itemizeHamburger();
-        hamburger.addHamburgerAddition1("Tomato", 0.27);
-        hamburger.addHamburgerAddition2("Lettuce", 0.75);
-        hamburger.addHamburgerAddition3("Cheese", 1.13);
+        hamburger.addTopping1("Tomato", 0.27);
+        hamburger.addTopping2("Lettuce", 0.75);
+        hamburger.addTopping3("Cheese", 1.13);
         System.out.println("Total Burger price is " + hamburger.itemizeHamburger());
         System.out.println(" ");
 
         burger_shop.HealthyBurger healthyBurger = new burger_shop.HealthyBurger("Bacon", 5.67);
-        healthyBurger.addHamburgerAddition1("Egg", 5.43);
-        healthyBurger.addHealthAddition1("Lentils", 3.41);
+        healthyBurger.addTopping1("Egg", 5.43);
+        healthyBurger.addHealthyTopping1("Sprouts", 2.41);
         System.out.println("Total Healthy Burger price is  " + healthyBurger.itemizeHamburger());
         System.out.println(" ");
 
         burger_shop.DeluxeBurger db = new burger_shop.DeluxeBurger();
-        db.addHamburgerAddition3("Should not do this", 50.53);
+        db.addTopping3("Should not do this", 50.53);
         db.itemizeHamburger();
 
 

@@ -2,28 +2,28 @@ package burger_shop;
 
 public class DeluxeBurger extends burger_shop.Hamburger {
     public DeluxeBurger() {
-        super("Deluxe", "Sausage & Bacon", 14.54, "White");
-        super.addHamburgerAddition1("Chips", 2.75);
-        super.addHamburgerAddition2("Drink", 1.81);
+        super("Deluxe", "Sausage & Bacon", 14.54, "White bread");
+        super.addTopping1("Chips", 2.75);
+        super.addTopping2("Drink", 1.81);
     }
 
     @Override
-    public void addHamburgerAddition1(String name, double price) {
-        System.out.println("Cannot not add additional items to a deluxe burger");
+    public void addTopping1(String name, double price) {
+        System.out.println("Cannot add additional topping1 to a deluxe burger");
     }
 
     @Override
-    public void addHamburgerAddition2(String name, double price) {
-        System.out.println("Cannot not add additional items to a deluxe burger");
+    public void addTopping2(String name, double price) {
+        System.out.println("Cannot add additional topping2 to a deluxe burger");
     }
 
     @Override
-    public void addHamburgerAddition3(String name, double price) {
-        System.out.println("Cannot not add additional items to a deluxe burger");
+    public void addTopping3(String name, double price) {
+        System.out.println("Cannot add additional topping3 to a deluxe burger");
     }
 
     @Override
-    public void addHamburgerAddition4(String name, double price) {
-        System.out.println("Cannot not add additional items to a deluxe burger");
+    public void addTopping4(String name, double price) {
+        System.out.println("Cannot add additional topping4 to a deluxe burger");
     }
 }
