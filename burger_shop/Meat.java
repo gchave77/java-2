@@ -4,7 +4,6 @@ public class Meat {
     private String name;
 
     static final String beef = "Beef";
-
     static final String chicken = ("Chicken");
     static final String turkey = ("Turkey");
     static final String brisket = ("Brisket");
