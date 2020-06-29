@@ -27,6 +27,7 @@ public class Main {
 
         burger_shop.Deluxe deluxe1 = new burger_shop.Deluxe("Deluxe", burger_shop.Meat.beef, 4.96, burger_shop.Bread.pretzel);
         deluxe1.Deluxe();
+        deluxe1.addTopping1("cheese", 1.25);
         System.out.println("Total Deluxe burger price is " + deluxe1.itemize());
         System.out.println(" ");
 
