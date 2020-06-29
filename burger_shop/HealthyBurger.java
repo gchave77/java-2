@@ -7,8 +7,8 @@ public class HealthyBurger extends burger_shop.Burger {
     private String healthyToppingName2;
     private double healthyToppingPrice2;
 
-    public HealthyBurger(String meat, double price) {
-        super("Healthy", meat, price, "wheat bun");
+    public HealthyBurger(String name, String meat, double price, String bread) {
+        super(name, meat, price, bread);
     }
 
     public void healthyTopping1(String name, double price) {
