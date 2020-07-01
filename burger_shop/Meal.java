@@ -19,8 +19,12 @@ public class Meal extends burger_shop.Burger {
         double mealPrice = super.itemize();
         mealPrice += this.drinkPrice;
         System.out.println("Added " + this.drink + " for an extra " + this.drinkPrice);
-        mealPrice += this.sidePrice;
-        System.out.println("Added " + this.side + " for an extra " + this.sidePrice);
+
+        if (this.side != null) {
+            mealPrice += this.sidePrice;
+            System.out.println("Added " + this.side + " for an extra " + this.sidePrice);
+        }
+
         System.out.println("Toppings: 'lettuce, pickles, tomatoes, onions, ketchup, mustard' are no additional charge.");
 
         return mealPrice;
