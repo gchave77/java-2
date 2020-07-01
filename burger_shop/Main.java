@@ -46,6 +46,17 @@ public class Main {
         System.out.println("Total Combo Meal price is " + meal1.itemize());
         System.out.println(" ");
 
+        burger_shop.Order order1 = new burger_shop.Order(burger_shop.BurgerType.healthy, burger_shop.Bread.wheat, burger_shop.Meat.chicken, 5.76);
+        order1.addTopping1(burger_shop.Toppings.egg, burger_shop.Toppings.eggPrice);
+        order1.addTopping2(burger_shop.Toppings.cheese, burger_shop.Toppings.cheesePrice);
+        order1.side1(burger_shop.Sides.iceCream, burger_shop.Sides.sidePrice);
+        order1.addTopping3(burger_shop.Toppings.avocado, burger_shop.Toppings.avocadoPrice);
+        order1.side3(burger_shop.Sides.friedPickles, burger_shop.Sides.sidePrice);
+        order1.drink(burger_shop.Drinks.sweetTea, burger_shop.Drinks.drinkPrice);
+        System.out.println("Total price is " + order1.itemize());
+        System.out.println(" ");
+
+
     }
 
 

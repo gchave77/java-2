@@ -1,8 +1,6 @@
 package burger_shop;
 
 public class Toppings {
-    private String name;
-
     static final String tomato = "tomato";
     static final String lettuce = "lettuce";
     static final String pickles = "pickles";
@@ -17,63 +15,4 @@ public class Toppings {
     static final String avocado = "avocado";
     static final double avocadoPrice = 1.51;
 
-    public Toppings(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public static String getTomato() {
-        return tomato;
-    }
-
-    public static String getLettuce() {
-        return lettuce;
-    }
-
-    public static String getPickles() {
-        return pickles;
-    }
-
-    public static String getOnions() {
-        return onions;
-    }
-
-    public static String getMustard() {
-        return mustard;
-    }
-
-    public static String getKetchup() {
-        return ketchup;
-    }
-
-    public static double getPrice() {
-        return price;
-    }
-
-    public static String getCheese() {
-        return cheese;
-    }
-
-    public static double getCheesePrice() {
-        return cheesePrice;
-    }
-
-    public static String getEgg() {
-        return egg;
-    }
-
-    public static double getEggPrice() {
-        return eggPrice;
-    }
-
-    public static String getAvacado() {
-        return avocado;
-    }
-
-    public static double getAvacadoPrice() {
-        return avocadoPrice;
-    }
 }

@@ -26,19 +26,4 @@ public class Meal extends burger_shop.Burger {
         return mealPrice;
     }
 
-    public String getDrink() {
-        return drink;
-    }
-
-    public double getDrinkPrice() {
-        return drinkPrice;
-    }
-
-    public String getSide() {
-        return side;
-    }
-
-    public double getSidePrice() {
-        return sidePrice;
-    }
 }
