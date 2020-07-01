@@ -1,5 +1,7 @@
 package burger_shop;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -32,11 +34,17 @@ public class Main {
         System.out.println("Total Deluxe1 burger price is " + deluxe1.itemize());
         System.out.println(" ");
 
-        burger_shop.Deluxe deluxe2 = new burger_shop.Deluxe("Deluxe2", burger_shop.Meat.brisket, 5.97, burger_shop.Bread.rye);
+        burger_shop.Deluxe deluxe2 = new burger_shop.Deluxe("Deluxe2", burger_shop.Meat.brisket, 5.95, burger_shop.Bread.rye);
         deluxe2.Deluxe();
         deluxe2.addTopping1(burger_shop.Toppings.lettuce, burger_shop.Toppings.price);
         System.out.println("Total Deluxe2 burger price is " + deluxe2.itemize());
+        System.out.println(" ");
 
+        burger_shop.Meal meal1 = new burger_shop.Meal("Combo meal", burger_shop.Meat.beef, 6.75, burger_shop.Bread.onion,
+                burger_shop.Drinks.coke, burger_shop.Drinks.drinkPrice, burger_shop.Sides.applePie, burger_shop.Sides.sidePrice);
+        meal1.addTopping1(burger_shop.Toppings.cheese, burger_shop.Toppings.cheesePrice);
+        System.out.println("Total Combo Meal price is " + meal1.itemize());
+        System.out.println(" ");
 
     }
 

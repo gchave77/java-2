@@ -1,13 +1,12 @@
 package burger_shop;
 
 public class Meal extends burger_shop.Burger {
-    private String[] drink = { "water", "gatorade", "coke", "sprite", "dr. pepper", "sweet tea", "diet coke" };
-    private double drinkPrice = 2.51;
-    private String[] side = { "fries", "chips", "apple pie", "ice cream", "fried pickles" };
-    private double sidePrice = 2.51;
+    private String drink;
+    private double drinkPrice;
+    private String side;
+    private double sidePrice;
 
-    public Meal(String name, String meat, double price, String bread, String[] drink, double drinkPrice, String[] side,
-            double sidePrice) {
+    public Meal(String name, String meat, double price, String bread, String drink, double drinkPrice, String side, double sidePrice) {
         super(name, meat, price, bread);
         this.drink = drink;
         this.drinkPrice = drinkPrice;
@@ -15,7 +14,19 @@ public class Meal extends burger_shop.Burger {
         this.sidePrice = sidePrice;
     }
 
-    public String[] getDrink() {
+    @Override
+    public double itemize() {
+        double mealPrice = super.itemize();
+        mealPrice += this.drinkPrice;
+        System.out.println("Added " + this.drink + " for an extra " + this.drinkPrice);
+        mealPrice += this.sidePrice;
+        System.out.println("Added " + this.side + " for an extra " + this.sidePrice);
+        System.out.println("Toppings: 'lettuce, pickles, tomatoes, onions, ketchup, mustard' are no additional charge.");
+
+        return mealPrice;
+    }
+
+    public String getDrink() {
         return drink;
     }
 
@@ -23,7 +34,7 @@ public class Meal extends burger_shop.Burger {
         return drinkPrice;
     }
 
-    public String[] getSide() {
+    public String getSide() {
         return side;
     }
 

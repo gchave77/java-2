@@ -14,8 +14,8 @@ public class Toppings {
     static final double cheesePrice = 1.51;
     static final String egg = "egg";
     static final double eggPrice = 2.51;
-    static final String avacado = "avacado";
-    static final double avacadoPrice = 1.51;
+    static final String avocado = "avocado";
+    static final double avocadoPrice = 1.51;
 
     public Toppings(String name) {
         this.name = name;
@@ -70,10 +70,10 @@ public class Toppings {
     }
 
     public static String getAvacado() {
-        return avacado;
+        return avocado;
     }
 
     public static double getAvacadoPrice() {
-        return avacadoPrice;
+        return avocadoPrice;
     }
 }
